@@ -49,3 +49,11 @@ apt install -y openssh
 a2enmod ssl
 a2ensite default-ssl
 systemctl restart apache2
+apt install -y unzip
+
+# Phpmyadmin
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.1/phpMyAdmin-5.0.1-all-languages.zip
+mv phpMyAdmin-5.0.1-all-languages /usr/share/phpmyadmin
+chown -R www-data:www-data /usr/share/phpmyadmin
+apt install -y php-imagick php-phpseclib php-php-gettext php7.3-mysql 
+## cf suite ici : https://linuxhint.com/install_phpmyadmin_debian_10/
