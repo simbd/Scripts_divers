@@ -60,10 +60,11 @@ apt install -y php-imagick php-phpseclib php-php-gettext php7.3-mysql
 
 # Certificat SSL Let's encrypt
 systemctl stop apache2
-apt install -y python3-certbot-apache letsencrypt
-# remplacer "MONDOMAINE" par le domaine concerné (exemple : toto.fr)
-certbot certonly --standalone --agree-tos --no-eff-email -d MONDOMAINE -d www.MONDOMAINE --rsa-key-size 4096
+apt install -y python3-certbot-apache letsencrypt certbot
 
+#cf doc : https://www.adsysteme.com/certificat-ssl-lets-encrypt-pour-apache-sous-debian-9/
+# Lancer certbot et répondre aux questions suivant le domaine
+certbot
 
 
 
