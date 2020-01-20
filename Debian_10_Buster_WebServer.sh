@@ -57,3 +57,14 @@ mv phpMyAdmin-5.0.1-all-languages /usr/share/phpmyadmin
 chown -R www-data:www-data /usr/share/phpmyadmin
 apt install -y php-imagick php-phpseclib php-php-gettext php7.3-mysql 
 ## cf suite ici : https://linuxhint.com/install_phpmyadmin_debian_10/
+
+# Certificat SSL Let's encrypt
+systemctl stop apache2
+apt install -y python3-certbot-apache
+# remplacer "MONDOMAINE" par le domaine concerné (exemple : toto.fr)
+certbot certonly --standalone --agree-tos --no-eff-email -d MONDOMAINE -d www.MONDOMAINE --rsa-key-size 4096
+
+
+
+
+
