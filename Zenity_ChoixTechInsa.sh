@@ -99,12 +99,12 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GFTP" "$CD_GFTP" \
 	$(chkDef "TRUE") "$CA_OPENSSHSERVER" "$CD_OPENSSHSERVER" \
 	$(chkDef "TRUE") "$CA_PUTTY" "$CD_PUTTY" \
-  $(chkDef "TRUE") "$CA_RDESKTOP" "$CD_RDESKTOP" \
+  	$(chkDef "TRUE") "$CA_RDESKTOP" "$CD_RDESKTOP" \
 	$(chkDef "TRUE") "$CA_REMMINA" "$CD_REMMINA" \
-  $(chkDef "FALSE") "$CA_TEAMVIEWER" "$CD_TEAMVIEWER" \
-  $(chkDef "FALSE") "$CA_WORMHOLE" "$CD_WORMHOLE" \
-  $(chkDef "FALSE") "$CA_X2GO" "$CD_X2GO" \
-  $(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
+  	$(chkDef "FALSE") "$CA_TEAMVIEWER" "$CD_TEAMVIEWER" \
+  	$(chkDef "FALSE") "$CA_WORMHOLE" "$CD_WORMHOLE" \
+  	$(chkDef "FALSE") "$CA_X2GO" "$CD_X2GO" \
+  	$(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
 	FALSE "$SCT_OFFICE" "===========================================================" \
 	$(chkDef "TRUE") "$CA_BOOSTNOTE" "$CD_BOOSTNOTE" \
 	$(chkDef "FALSE") "$CA_CALIBRE" "$CD_CALIBRE" \
@@ -131,7 +131,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_ONLYOFFICE" "$CD_ONLYOFFICE" \
 	$(chkDef "FALSE") "$CA_OPENOFFICE" "$CD_OPENOFFICE" \
 	$(chkDef "FALSE") "$CA_PANDOC" "$CD_PANDOC" \
-	$(chkDef "TRUE") "$CA_PDFMOD" "$CD_PDFMOD" \
+	$(chkDef "FALSE") "$CA_PDFMOD" "$CD_PDFMOD" \
 	$(chkDef "TRUE") "$CA_PDFSAM" "$CD_PDFSAM" \
 	$(chkDef "FALSE") "$CA_PDFSHUFFLER" "$CD_PDFSHUFFLER" \
 	$(chkDef "TRUE") "$CA_POLICEMST" "$CD_POLICEMST" \
@@ -142,7 +142,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_UMBRELLO" "$CD_UMBRELLO" \
 	$(chkDef "FALSE") "$CA_WPSOFFICE" "$CD_WPSOFFICE" \
 	$(chkDef "TRUE") "$CA_XMIND" "$CD_XMIND" \
-	$(chkDef "TRUE") "$CA_XOURNAL" "$CD_XOURNAL" \
+	$(chkDef "FALSE") "$CA_XOURNAL" "$CD_XOURNAL" \
 	$(chkDef "FALSE") "$CA_XPAD" "$CD_XPAD" \
 	$(chkDef "TRUE") "$CA_ZEAL" "$CD_ZEAL" \
 	$(chkDef "TRUE") "$CA_ZETTLR" "$CD_ZETTLR" \
