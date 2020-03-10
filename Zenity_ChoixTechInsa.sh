@@ -434,7 +434,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_IPYTHON" "$CD_IPYTHON" \
 	$(chkDef "FALSE") "$CA_JAVA" "$CD_JAVA" \
 	$(chkDef "FALSE") "$CA_JAVAOPENJDK8" "$CD_JAVAOPENJDK8" \
-	$(chkDef "TRUE") "$CA_JAVAOPENJDK" "$CD_JAVAOPENJDK" \
+	$(chkDef "FALSE") "$CA_JAVAOPENJDK" "$CD_JAVAOPENJDK" \
 	$(chkDef "FALSE") "$CA_JUPYTER" "$CD_JUPYTER" \
 	$(chkDef "FALSE") "$CA_LATEXFULL" "$CD_LATEXFULL" \
 	$(chkDef "FALSE") "$CA_LATEXILA" "$CD_LATEXILA" \
@@ -479,7 +479,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_OPTIMIS_SWAP" "$CD_OPTIMIS_SWAP" \
 	$(chkDef "TRUE") "$CA_PHORONIXTESTSUITE" "$CD_PHORONIXTESTSUITE" \
 	$(chkDef "TRUE") "$CA_SNAPREMPLACEMENT" "$CD_SNAPREMPLACEMENT" \
-	$(chkDef "TRUE") "$CA_NAUTILUS_EXTRA" "$CD_NAUTILUS_EXTRA" \
+	$(chkDef "FALSE") "$CA_NAUTILUS_EXTRA" "$CD_NAUTILUS_EXTRA" \
 	$(chkDef "FALSE") "$CA_SYSFIC" "$CD_SYSFIC" \
 	$(chkDef "FALSE") "$CA_TLP" "$CD_TLP" \
 	$(chkDef "FALSE") "$CA_TLP_THINKPAD" "$CD_TLP_THINKPAD" \
